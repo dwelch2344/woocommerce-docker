@@ -1,0 +1,17 @@
+webserver:
+   container_name: woostore 
+   image: library/wordpress
+   links:
+    - dbserver:mysql
+   ports:
+    - 8080:80
+   volumes:
+    - ./www:/var/www/html
+
+dbserver:
+   container_name: woo_maria
+   image: mariadb
+   environment:
+    MYSQL_ROOT_PASSWORD: example
+   ports:
+    - 3306:3306

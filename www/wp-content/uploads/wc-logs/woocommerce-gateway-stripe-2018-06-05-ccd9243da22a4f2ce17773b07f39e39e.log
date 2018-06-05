@@ -1,0 +1,605 @@
+06-05-2018 @ 04:20:43 - 
+====Stripe Version: 4.1.6====
+====Start Log====
+Error: Unable to verify domain - missing secret key.
+====End Log====
+
+
+06-05-2018 @ 04:21:04 - 
+====Stripe Version: 4.1.6====
+====Start Log====
+Error: Unable to verify domain - missing secret key.
+====End Log====
+
+
+06-05-2018 @ 04:27:04 - 
+====Stripe Version: 4.1.6====
+====Start Log====
+sources/src_1CZWkxCyJufxJcZCUwxjBSf4
+====End Log====
+
+
+06-05-2018 @ 04:27:05 - 
+====Stripe Version: 4.1.6====
+====Start Log====
+Info: Begin processing payment for order 10 for the amount of 10.12
+====End Log====
+
+
+06-05-2018 @ 04:27:05 - 
+====Stripe Version: 4.1.6====
+====Start Log====
+charges request: Array
+(
+    [currency] => usd
+    [amount] => 1012
+    [description] => admin - Order 10
+    [capture] => true
+    [expand[]] => balance_transaction
+    [metadata] => Array
+        (
+            [customer_name] => Dave Welch
+            [customer_email] => dave@7oaksgroup.com
+            [order_id] => 10
+        )
+
+    [source] => src_1CZWkxCyJufxJcZCUwxjBSf4
+)
+
+====End Log====
+
+
+06-05-2018 @ 04:27:06 - 
+====Stripe Version: 4.1.6====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_1CZWkzCyJufxJcZCEuY0OaaD
+    [object] => charge
+    [amount] => 1012
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1CZWkzCyJufxJcZCNgTUfbHz
+            [object] => balance_transaction
+            [amount] => 1012
+            [available_on] => 1528761600
+            [created] => 1528172813
+            [currency] => usd
+            [description] => admin - Order 10
+            [exchange_rate] => 
+            [fee] => 59
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 59
+                            [application] => 
+                            [currency] => usd
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 953
+            [source] => ch_1CZWkzCyJufxJcZCEuY0OaaD
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1528172813
+    [currency] => usd
+    [customer] => 
+    [description] => admin - Order 10
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [customer_name] => Dave Welch
+            [customer_email] => dave@7oaksgroup.com
+            [order_id] => 10
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1CZWkzCyJufxJcZCEuY0OaaD/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => src_1CZWkxCyJufxJcZCUwxjBSf4
+            [object] => source
+            [amount] => 
+            [card] => stdClass Object
+                (
+                    [exp_month] => 12
+                    [exp_year] => 2021
+                    [address_line1_check] => pass
+                    [address_zip_check] => pass
+                    [brand] => Visa
+                    [card_automatically_updated] => 
+                    [country] => US
+                    [cvc_check] => pass
+                    [fingerprint] => fqYTUcOCpUfVQba5
+                    [funding] => credit
+                    [last4] => 4242
+                    [three_d_secure] => optional
+                    [tokenization_method] => 
+                    [dynamic_last4] => 
+                )
+
+            [client_secret] => src_client_secret_CzVmQ13MJCqNEuCulwFE8i4R
+            [created] => 1528172813
+            [currency] => 
+            [flow] => none
+            [livemode] => 
+            [metadata] => stdClass Object
+                (
+                )
+
+            [owner] => stdClass Object
+                (
+                    [address] => stdClass Object
+                        (
+                            [city] => SLC
+                            [country] => US
+                            [line1] => 4689 South Holly Lane
+                            [line2] => 
+                            [postal_code] => 84117
+                            [state] => UT
+                        )
+
+                    [email] => dave@7oaksgroup.com
+                    [name] => Dave Welch
+                    [phone] => 8012448684
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => 
+            [status] => consumed
+            [type] => card
+            [usage] => reusable
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+====End Log====
+
+
+06-05-2018 @ 04:45:13 - 
+====Stripe Version: 4.1.6====
+====Start Log====
+sources/src_1CZX2UCyJufxJcZCA8UrTm8F
+====End Log====
+
+
+06-05-2018 @ 04:45:14 - 
+====Stripe Version: 4.1.6====
+====Start Log====
+Info: Begin processing payment for order 11 for the amount of 10.12
+====End Log====
+
+
+06-05-2018 @ 04:45:14 - 
+====Stripe Version: 4.1.6====
+====Start Log====
+charges request: Array
+(
+    [currency] => usd
+    [amount] => 1012
+    [description] => admin - Order 11
+    [capture] => true
+    [expand[]] => balance_transaction
+    [metadata] => Array
+        (
+            [customer_name] => Dave Welch
+            [customer_email] => dave@7oaksgroup.com
+            [order_id] => 11
+        )
+
+    [source] => src_1CZX2UCyJufxJcZCA8UrTm8F
+)
+
+====End Log====
+
+
+06-05-2018 @ 04:45:15 - 
+====Stripe Version: 4.1.6====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_1CZX2XCyJufxJcZCZhRSwZjB
+    [object] => charge
+    [amount] => 1012
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1CZX2XCyJufxJcZC1tBKxgL7
+            [object] => balance_transaction
+            [amount] => 1012
+            [available_on] => 1528761600
+            [created] => 1528173901
+            [currency] => usd
+            [description] => admin - Order 11
+            [exchange_rate] => 
+            [fee] => 59
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 59
+                            [application] => 
+                            [currency] => usd
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 953
+            [source] => ch_1CZX2XCyJufxJcZCZhRSwZjB
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1528173901
+    [currency] => usd
+    [customer] => 
+    [description] => admin - Order 11
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [customer_name] => Dave Welch
+            [customer_email] => dave@7oaksgroup.com
+            [order_id] => 11
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1CZX2XCyJufxJcZCZhRSwZjB/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => src_1CZX2UCyJufxJcZCA8UrTm8F
+            [object] => source
+            [amount] => 
+            [card] => stdClass Object
+                (
+                    [exp_month] => 12
+                    [exp_year] => 2021
+                    [address_line1_check] => pass
+                    [address_zip_check] => pass
+                    [brand] => Visa
+                    [card_automatically_updated] => 
+                    [country] => US
+                    [cvc_check] => pass
+                    [fingerprint] => fqYTUcOCpUfVQba5
+                    [funding] => credit
+                    [last4] => 4242
+                    [three_d_secure] => optional
+                    [tokenization_method] => 
+                    [dynamic_last4] => 
+                )
+
+            [client_secret] => src_client_secret_CzW4eOpTpXOyz6mTEbHznNoJ
+            [created] => 1528173901
+            [currency] => 
+            [flow] => none
+            [livemode] => 
+            [metadata] => stdClass Object
+                (
+                )
+
+            [owner] => stdClass Object
+                (
+                    [address] => stdClass Object
+                        (
+                            [city] => SLC
+                            [country] => US
+                            [line1] => 4689 South Holly Lane
+                            [line2] => 
+                            [postal_code] => 84117
+                            [state] => UT
+                        )
+
+                    [email] => dave@7oaksgroup.com
+                    [name] => Dave Welch
+                    [phone] => 8012448684
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => 
+            [status] => consumed
+            [type] => card
+            [usage] => reusable
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+====End Log====
+
+
+06-05-2018 @ 04:51:04 - 
+====Stripe Version: 4.1.6====
+====Start Log====
+sources/src_1CZX89CyJufxJcZCYrDMnFF1
+====End Log====
+
+
+06-05-2018 @ 04:51:04 - 
+====Stripe Version: 4.1.6====
+====Start Log====
+Info: Begin processing payment for order 12 for the amount of 10.12
+====End Log====
+
+
+06-05-2018 @ 04:51:04 - 
+====Stripe Version: 4.1.6====
+====Start Log====
+charges request: Array
+(
+    [currency] => usd
+    [amount] => 1012
+    [description] => admin - Order 12
+    [capture] => true
+    [expand[]] => balance_transaction
+    [metadata] => Array
+        (
+            [customer_name] => Dave Welch
+            [customer_email] => dave@7oaksgroup.com
+            [order_id] => 12
+        )
+
+    [source] => src_1CZX89CyJufxJcZCYrDMnFF1
+)
+
+====End Log====
+
+
+06-05-2018 @ 04:51:05 - 
+====Stripe Version: 4.1.6====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_1CZX8BCyJufxJcZCJ3JRIrhV
+    [object] => charge
+    [amount] => 1012
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1CZX8BCyJufxJcZCxrKwSpGT
+            [object] => balance_transaction
+            [amount] => 1012
+            [available_on] => 1528761600
+            [created] => 1528174251
+            [currency] => usd
+            [description] => admin - Order 12
+            [exchange_rate] => 
+            [fee] => 59
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 59
+                            [application] => 
+                            [currency] => usd
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 953
+            [source] => ch_1CZX8BCyJufxJcZCJ3JRIrhV
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1528174251
+    [currency] => usd
+    [customer] => 
+    [description] => admin - Order 12
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [customer_name] => Dave Welch
+            [customer_email] => dave@7oaksgroup.com
+            [order_id] => 12
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1CZX8BCyJufxJcZCJ3JRIrhV/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => src_1CZX89CyJufxJcZCYrDMnFF1
+            [object] => source
+            [amount] => 
+            [card] => stdClass Object
+                (
+                    [exp_month] => 12
+                    [exp_year] => 2021
+                    [address_line1_check] => pass
+                    [address_zip_check] => pass
+                    [brand] => Visa
+                    [card_automatically_updated] => 
+                    [country] => US
+                    [cvc_check] => pass
+                    [fingerprint] => fqYTUcOCpUfVQba5
+                    [funding] => credit
+                    [last4] => 4242
+                    [three_d_secure] => optional
+                    [tokenization_method] => 
+                    [dynamic_last4] => 
+                )
+
+            [client_secret] => src_client_secret_CzWA1g5UBkjOf5YgwT2sul3Z
+            [created] => 1528174251
+            [currency] => 
+            [flow] => none
+            [livemode] => 
+            [metadata] => stdClass Object
+                (
+                )
+
+            [owner] => stdClass Object
+                (
+                    [address] => stdClass Object
+                        (
+                            [city] => SLC
+                            [country] => US
+                            [line1] => 4689 South Holly Lane
+                            [line2] => 
+                            [postal_code] => 84117
+                            [state] => UT
+                        )
+
+                    [email] => dave@7oaksgroup.com
+                    [name] => Dave Welch
+                    [phone] => 8012448684
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => 
+            [status] => consumed
+            [type] => card
+            [usage] => reusable
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+====End Log====
+
+
